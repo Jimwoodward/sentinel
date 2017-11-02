@@ -1,0 +1,11 @@
+hour = 8
+day = "tuesday"
+deploy_days = ["monday", "tuesday", "wednesday"]
+
+work_hours = rule {
+  hour >= 7 and hour <= 18
+}
+
+main = rule {
+  work_hours and day in deploy_days 
+}  

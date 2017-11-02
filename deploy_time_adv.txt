@@ -1,0 +1,19 @@
+hour = 8
+day = "tuesday"
+deploy_days = ["monday", "tuesday", "wednesday"]
+
+beginning_of_work_day = rule {
+  hour >= 7
+}
+
+end_of_work_day = rule {
+  hour <= 18
+}
+
+work_hours = rule {
+  beginning_of_work_day and end_of_work_day
+}
+
+main = rule {
+  work_hours and day in deploy_days 
+}
