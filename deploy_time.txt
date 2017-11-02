@@ -1,11 +1,19 @@
+# "hour" is the time of the day in military time. In this example we set the time of the day to eight in the morning
 hour = 8
+
+# "day" is the day of the week. In this example the day of the week is Tuesday
 day = "tuesday"
+
+# "deploy_days" are the days we at JimCo are allowed to deploy our code to production. In this example we are only allowed to deploy our code on Monday, Tuesday, and Wednesday
 deploy_days = ["monday", "tuesday", "wednesday"]
 
+
+# "work_hours" is our first Sentinel rule, and it is when the working hours of JimCo are. In this example the work hours are 7 in the morning to 6 at night
 work_hours = rule {
   hour >= 7 and hour <= 18
 }
 
+# This is our main sentinel rule. Here we are having our policy check that the hour we are deploying our code falls within JimCo working hours, and that the day that we are deploying is one of our deploy days
 main = rule {
   work_hours and day in deploy_days 
 }  
