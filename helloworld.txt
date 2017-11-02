@@ -1,2 +1,3 @@
+# "hour" is the time of the day in hours expressed in military time
 hour = 54 
 main = rule { hour > 0 and hour <= 12 }
