@@ -1,10 +1,4 @@
-# This example is nearly identical to the deploy_time.txt file with one exception. Here I have decided to break the work_hours rule into two separate rules, beginning_of_work_day and end_of_work_day. This is just a simple and obvious example of how I can break my rules into more reusable pieces of code.
-
-# "hour" is the time of the day in military time. In this example we set the time of the day to eight in the morning
-
-
-# "day" is the day of the week. In this example the day of the week is Tuesday
-
+# This example is nearly identical to the deploy_time.txt file with one exception. Here I have decided to break the work_hours rule into two separate rules, beginning_of_work_day and end_of_work_day. This is just a simple and obvious example of how I can break the rules into more reusable pieces of code.
 
 # "deploy_days" are the days we at JimCo are allowed to deploy our code to production. In this example we are only allowed to deploy our code on Monday, Tuesday, and Wednesday
 deploy_days = ["monday", "tuesday", "wednesday"]

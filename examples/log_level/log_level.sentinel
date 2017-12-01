@@ -1,0 +1,4 @@
+# This example is inspired by issues seen with ES Log clusters
+
+log_level is ["none", "error", "warning"]
+log_level is not ["debug"]
