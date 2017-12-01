@@ -2,5 +2,9 @@
   "global": {
     "day": "blah",
     "hour": 1608
+  },
+  
+  "test": {
+    "main": true
   }
 }

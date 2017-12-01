@@ -1,9 +1,7 @@
 {
   "global": {
-    "day": "monday",
-    "hour": 8
+    "x": 2
   },
-  
   "test": {
     "main": true
   }
