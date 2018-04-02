@@ -1,0 +1,7 @@
+import "tfplan"
+
+main = rule {
+  all tfplan.resources.aws_s3_buckets as b {
+    b.applied.tags >=3
+  }
+}
